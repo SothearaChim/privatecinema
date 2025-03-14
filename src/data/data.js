@@ -3,6 +3,9 @@ import titanic from '../assets/img/titanic.jpg'
 import spiderman from '../assets/img/spiderman.jpg'
 import kungfupanda from '../assets/img/kungfupanda.jpg'
 import avenger from '../assets/img/avenger.jpg'
+import homealone from '../assets/img/homealone.jpg'
+import godfather from '../assets/img/godfather.jpg'
+import aquiteplace from '../assets/img/aquiteplace.jpg'
 export const data = [
     {
         id: 1,
@@ -46,5 +49,26 @@ export const data = [
         img: avenger,
         time:'3h 1m'
     },
+    {
+        id: 6,
+        name:'Home Alone (1990)',
+        catagory:'Family/Comedy',
+        img:homealone, 
+        time:'1h 43m'
+    },
+    {
+        id: 7,
+        name:'The Godfather',
+        catagory:'Crime/Crime',
+        img:godfather,
+        time:'2h 55m'
+    },
+    {
+        id: 8,
+        name:'A Quite Place',
+        catagory:'Horror/Sci-fi',
+        img: aquiteplace,
+        time:'1h 30m'
+    }
    
 ]

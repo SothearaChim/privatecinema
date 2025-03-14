@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-
+import { IoMdSearch } from "react-icons/io";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoClose } from "react-icons/io5";
 const Navbar = () => {
@@ -10,9 +10,9 @@ const Navbar = () => {
     }
 
   return (
-    <nav className='flex justify-center h-24 mx-auto items-center max-w-[100%] px-12 text-white pt-5   '>
-
-       <h1 className=' font-bold '>Private <span className='font-bold bg-yellow-300 text-black p-1 rounded-md cursor-pointer'>Cinema</span></h1> 
+    <nav className='flex justify-center h-24 mx-auto items-center max-w-[100%] px-12 text-white pt-5 gap-2 z-10  '>
+<IoMdSearch size={25} className='top-12 left-12 absolute md:hidden' />
+       <h1 className='cursor-pointer  font-bold '>Private <span className='font-bold bg-yellow-300 text-black p-1 rounded-md  '>Cinema</span></h1> 
 
         <div>
             <ul className='hidden md:flex gap-3 uppercase  ml-3'>
@@ -22,6 +22,10 @@ const Navbar = () => {
                 <li className='p-4 cursor-pointer'>booking</li>
             </ul>
         </div>
+      
+        <IoMdSearch className='hidden md:block 'size={25} />
+        <input type="text" placeholder='Search' className='border border-gray-600 p-1 rounded-md text-gray-400 lg:block hidden '/>
+
     {/* overlay */}
     {!nav ? <div className='bg-black/80 fixed w-full h-screen z-5 top-0 left-0 ease-in duration-100 md:hidden '></div> : ''}
 
